@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+/* Types of Constructor
+
+1) Empty default constructor
+2) Default constructor
+3) Parameterize constructor
+
+ */
+
 // initializing data using constructor
 
 class Employee
@@ -15,7 +23,23 @@ public:
         cout << "Name : " << Name << ", age : " << Age << " ,company : " << Company << endl;
     }
 
+    /*  Empty default constructor
+   Employee(){
+
+    }
+    */
+
+    /*  Default constructor
+    Employee(){
+         Name = "Null";
+         Age = 0;
+         Company = "XYZ";
+
+     }
+    */
+
     // private:
+    // parameterize constructor
     Employee(string name, int age, string company)
     {
         Name = name;
